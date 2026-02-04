@@ -1,7 +1,24 @@
 {
-  "name": "component2",
-  "version": "0.1.0",
-  "private": true,
+  "name": "animated-card-framer-motion",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A beautiful animated card component built with Next.js 15, Framer Motion, and TailwindCSS",
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/component2.git"
+  },
+  "keywords": [
+    "framer-motion",
+    "nextjs",
+    "react",
+    "animation",
+    "card-component",
+    "ui-component",
+    "tailwindcss",
+    "tabler-icons"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

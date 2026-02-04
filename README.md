@@ -1,36 +1,158 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Animated Card Component
 
-## Getting Started
+A beautiful and interactive card component built with Next.js 15, Framer Motion, and TailwindCSS, featuring smooth animations and modern design patterns.
 
-First, run the development server:
+![Component Preview](https://img.shields.io/badge/Next.js-15.3.3-black?style=for-the-badge&logo=next.js)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.15.0-blue?style=for-the-badge&logo=framer)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
+
+## ✨ Features
+
+- **Smooth Animations** - Powered by Framer Motion
+- **Modern UI Components** - Reusable card components
+- **Icon Integration** - Tabler Icons React library
+- **Responsive Design** - Mobile-first approach
+- **TypeScript Support** - Fully typed components
+- **TailwindCSS 4** - Modern utility-first styling
+- **Geist Font** - Professional typography
+
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/component2.git
+
+# Navigate to project directory
+cd component2
+
+# Install dependencies
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the component in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** Next.js 15.3.3
+- **Animation:** Framer Motion 12.15.0
+- **UI Icons:** @tabler/icons-react
+- **Styling:** TailwindCSS 4
+- **Language:** TypeScript 5
+- **Font:** Geist (Vercel)
+- **Utilities:** clsx, tailwind-merge
 
-## Learn More
+## 🎨 Component Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+component2/
+├── app/
+│   ├── page.tsx           # Main page
+│   ├── layout.tsx         # Root layout
+│   ├── globals.css        # Global styles
+│   ├── components/
+│   │   ├── content.tsx    # Content wrapper
+│   │   └── ui/
+│   │       └── card.tsx   # Card component
+│   ├── lib/
+│   │   └── utils.ts       # Utility functions
+│   └── assets/            # Images and media
+└── public/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💻 Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Basic Card Component
 
-## Deploy on Vercel
+```tsx
+import { Card } from '@/app/components/ui/card';
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+export default function Page() {
+  return (
+    <div className="p-4">
+      <Card />
+    </div>
+  );
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Using the Content Wrapper
+
+```tsx
+import { Content } from '@/app/components/content';
+
+export default function Page() {
+  return <Content />;
+}
+```
+
+## 🛠️ Utility Functions
+
+The project includes utility functions for class name management:
+
+```typescript
+import { cn } from '@/app/lib/utils';
+
+// Merge Tailwind classes efficiently
+const className = cn('base-class', condition && 'conditional-class');
+```
+
+## 🌐 Deployment
+
+### Deploy on Vercel (Recommended)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/component2)
+
+1. Push your code to GitHub
+2. Import the project to [Vercel](https://vercel.com)
+3. Vercel will automatically detect Next.js and deploy
+
+### Deploy on Netlify
+
+```bash
+npm run build
+```
+
+Deploy the `.next` output directory to Netlify.
+
+### Build for Production
+
+```bash
+npm run build
+npm run start
+```
+
+## 🎯 Key Features Explained
+
+- **Framer Motion Integration:** Smooth, performant animations
+- **Component Composition:** Modular and reusable UI elements
+- **TypeScript:** Full type safety across the application
+- **Modern Tooling:** Latest Next.js 15 with App Router
+- **Optimized Fonts:** Automatic font optimization with Geist
+
+## 📄 License
+
+MIT License - feel free to use this component in your projects!
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 👤 Author
+
+Your Name - [@yourhandle](https://twitter.com/yourhandle)
+
+---
+
+⭐ Star this repo if you find it helpful!
