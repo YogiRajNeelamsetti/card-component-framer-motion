@@ -4,7 +4,6 @@
   "private": false,
   "description": "A beautiful animated card component built with Next.js 15, Framer Motion, and TailwindCSS",
   "author": "Your Name <your.email@example.com>",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/yourusername/component2.git"

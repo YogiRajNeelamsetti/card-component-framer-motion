@@ -141,10 +141,6 @@ npm run start
 - **Modern Tooling:** Latest Next.js 15 with App Router
 - **Optimized Fonts:** Automatic font optimization with Geist
 
-## 📄 License
-
-MIT License - feel free to use this component in your projects!
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
