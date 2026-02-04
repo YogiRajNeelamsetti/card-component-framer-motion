@@ -22,7 +22,7 @@ A beautiful and interactive card component built with Next.js 15, Framer Motion,
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/component2.git
+git clone https://github.com/YogiRajNeelamsetti/card-component-framer-motion.git
 
 # Navigate to project directory
 cd component2
@@ -112,7 +112,7 @@ const className = cn('base-class', condition && 'conditional-class');
 
 ### Deploy on Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/component2)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YogirajNeelamsetti/card-component-framer-motion)
 
 1. Push your code to GitHub
 2. Import the project to [Vercel](https://vercel.com)
@@ -147,7 +147,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## 👤 Author
 
-Your Name - [@yourhandle](https://twitter.com/yourhandle)
+Your Name - [@im_yogiraj](https://twitter.com/im_yogiraj)
 
 ---
 
